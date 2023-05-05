@@ -1,10 +1,7 @@
-import 'package:bookly_app/constants.dart';
-import 'package:bookly_app/features/home/presentation/views/widgets/customListViewItem.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-
 import 'customAppBar.dart';
+import 'listView.dart';
 
 class homeBody extends StatelessWidget{
   @override
@@ -12,10 +9,18 @@ class homeBody extends StatelessWidget{
   return Container(
     padding: EdgeInsets.only(top: 20,left: 10),
     child: Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         customAppBar(),
-        customListItem(),
-        
+        listView(),
+        Text('Best Seller ',
+          style: TextStyle(
+
+            fontSize: 22,
+            fontWeight: FontWeight.w600,
+          ),
+        ),
+
       ],
     ),
   );

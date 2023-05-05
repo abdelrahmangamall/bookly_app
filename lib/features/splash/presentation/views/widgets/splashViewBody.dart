@@ -20,7 +20,7 @@ class _splashBodyState extends State<splashBody> with
   void initState(){
     super.initState();
     initSlidingAnimation();
-    Future.delayed(const Duration(seconds: 2),(){
+    Future.delayed(const Duration(seconds: 4),(){
       Get.to(()=> homeView(),
           transition:Transition.fade,
           duration:KTransitionDuration,);
