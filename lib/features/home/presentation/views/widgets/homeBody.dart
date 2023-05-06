@@ -1,3 +1,5 @@
+import 'package:bookly_app/features/home/presentation/views/widgets/bookRating.dart';
+import 'package:bookly_app/features/home/presentation/views/widgets/secCustomListItem.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'customAppBar.dart';
@@ -19,6 +21,14 @@ class homeBody extends StatelessWidget{
             fontSize: 22,
             fontWeight: FontWeight.w600,
           ),
+        ),
+        SizedBox(height: 20,),
+        Row(
+        //  mainAxisAlignment: MainAxisAlignment.,
+          children: [
+            secCustomItem(),
+
+          ],
         ),
 
       ],
