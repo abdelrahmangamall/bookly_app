@@ -8,7 +8,6 @@ class secCustomItem extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
    return SizedBox(
-
      height: 140,
      child: Row(
        mainAxisSize: MainAxisSize.max,
@@ -61,10 +60,8 @@ class secCustomItem extends StatelessWidget{
              ],
            ),
          ),
-
        ],
      ),
    );
   }
-
 }

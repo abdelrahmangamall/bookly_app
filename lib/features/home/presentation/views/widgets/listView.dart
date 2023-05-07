@@ -10,6 +10,7 @@ class listView extends StatelessWidget{
      child: SizedBox(
        height: MediaQuery.of(context).size.height * .3,
        child: ListView.builder(
+
          scrollDirection: Axis.horizontal,
            itemBuilder: (context,index){
              return customListItem();
